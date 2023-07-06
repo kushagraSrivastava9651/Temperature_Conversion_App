@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fefae0"
+
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <TextView
+        android:id="@+id/temp_convertor"
+        android:background="#dda15e"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_height="48dp"
+android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:text="TEMPERATURE CONVERTOR"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:text="ENTER TEMPERATURE TO BE CONVERTED" />
+    <EditText
+        android:id="@+id/enter"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="ENTER TEMPERATURE "
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/Choose"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+
+        android:text="CHOOSE THE TEMPERATURE CONVERTION SCALE" />
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+        <RadioButton
+            android:id="@+id/f2h"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/f2h"
+            android:layout_marginTop="30dp"
+            android:background="#606c38"
+            android:checked="false"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+        />
+
+
+        <RadioButton
+            android:id="@+id/c2f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Celsius to fahreneit"
+            android:background="#606c38"
+            android:textAllCaps="true"
+            android:checked="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textStyle="bold"
+            android:layout_margin="20dp"/>
+
+
+        </RadioGroup>
+    <Button
+        android:id="@+id/result"
+
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:text="RESULT"
+        />
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+
+        android:text="WAITING FOR CONVERTION"
+        />
+
+
+</LinearLayout>
+
+</LinearLayout>

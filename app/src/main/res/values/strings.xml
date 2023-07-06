@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Temperature_Convertor</string>
+    <string name="f2h">Fahrenheit To Calcius</string>
+</resources>
