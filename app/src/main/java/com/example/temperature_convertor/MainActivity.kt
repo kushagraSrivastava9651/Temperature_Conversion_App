@@ -29,10 +29,20 @@ class MainActivity : AppCompatActivity() {
         btn.setOnClickListener  {
 
      if(f2h.isChecked){
-        out.setText(((((input.text.toString().toDouble())-32)*5)/9).toString().plus("Degree Celcius"))
+       var a=  ((((input.text.toString().toDouble())-32)*5)/9).toString()
+         if(a.contains(".")){
+             var ind=a.indexOf(".")
+             a=a.substring(0,ind+2)
+         }
+         out.text = (a.plus("°C"))
      }
     else if(c2f.isChecked){
-         out.setText(((((input.text.toString().toDouble())*9)/5)+32).toString().plus("Degree Fahreneit"))
+         var a=  ((((input.text.toString().toDouble())*9)/5)+32).toString()
+         if(a.contains(".")){
+             var ind=a.indexOf(".")
+             a=a.substring(0,ind+2)
+         }
+         out.text = a.plus("°F")
 
      }
          }
